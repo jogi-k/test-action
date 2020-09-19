@@ -24,7 +24,7 @@ jobs:
       
       # Installs pandoc
       - name: Install pandoc
-        run: sudo apt install pandoc pdflatex
+        run: sudo apt install pandoc texlive-latex-base texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra
 
       - name : Build PDF
         run: pandoc -t beamer README.md -o hugo.pdf
